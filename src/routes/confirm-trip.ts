@@ -6,7 +6,7 @@ import { dayjs } from "../lib/dayjs";
 import { getMailClient } from "../lib/mail";
 import { prisma } from "../lib/prisma";
 import { ClientError } from "../errors/client-error";
-import { env } from "../../env";
+import { env } from "../env";
 
 export async function confirmTrip(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().get('/trips/:tripId/confirm', {
