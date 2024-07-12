@@ -3,7 +3,7 @@ import fastify from "fastify";
 import { serializerCompiler, validatorCompiler } from "fastify-type-provider-zod";
 import { confirmParticipants } from "./routes/confirm-participants";
 import { confirmTrip } from "./routes/confirm-trip";
-import { getActivities } from "./routes/create-activities";
+import { getActivities } from "./routes/get-activities";
 import { createActivity } from "./routes/create-activity";
 import { createLink } from "./routes/create-link";
 import { createTrip } from "./routes/create-trip";
